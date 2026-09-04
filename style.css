@@ -47,30 +47,35 @@ form {
         flex-direction: column;
         gap: 15px;
     }
-}
 
-nav ul {
-    flex-direction: column;
-    text-align: center;
-}
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 
-main {
-    padding: 15px;
-    margin: 10px;
-    gap: 20px;
-}
 
-main section {
-    flex: 1 1 100%;
-    min-width: 0;
-    padding: 15px;
-}
+    main {
+        padding: 15px;
+        margin: 10px;
+        gap: 20px;
 
-h1 {
-    front-size: 40px;
-    color: Green;
-}
+    }
 
+    main section {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 75px;
+        color: red;
+    }
+
+    span {
+        font-size: 75 px;
+        color: green;
+    }
+}
 
 @media (max-width: 768px) {
     h2 {
@@ -79,24 +84,26 @@ h1 {
     }
 }
 
-nav ul {
-    flex-direction: column;
-    text-align: center;
+nav a {
+    transition: color 0.1s ease;
 }
 
-main {
-    padding: 15px;
-    margin: 10px;
-    gap: 20px;
+nav a:hover {
+    color: green;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: background-colorn 0.5 ease;
+
 
 }
 
-main section {
-    flex: 1 1 100%;
-    min-width: 0;
-    padding: 15px;
-}
-
-span {
-    color: blue;
+button:hover {
+    background-color: pink;
+    color: black;
 }
