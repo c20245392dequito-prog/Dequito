@@ -1,12 +1,12 @@
 console.log("Hello mundo")
-const Myname = "Diolito";
+const Myname = "Dequito, Jive Miguel V.";
 console.log("name: " + Myname);
 let age = 20;
 let number = "09109436835";
 console.log("Age: " + age)
 console.log("Number: " + number);
 
-const address = "Brgy. San Isidro E.B. Magalona";
+const address = "Brgy.6A Victorias City, Neg";
 console.log("Address: " + address);
 
 function greet(name) {
@@ -17,30 +17,32 @@ function greet(name) {
 }
 console.log(greet("rene"))
 
-function mdas(a, b) {
-    let mul = a * b;
-    let div = a / b;
-    let sum = a + b;
-    let sub = a - b;
-    return (`values: ${a} and ${b}. \n product: ${mul}, \n qoutient: ${div}, \n sum: ${sum},\n difference: ${sub}`);
-}
-console.log(mdas(5, 3));
-
-const heading = document.querySelector("h1");
+const heading = document.querySelector("h1")
 console.log(heading);
 
-const contactheading = document.querySelector("#contact h2");
-console.log(contactheading);
 
-const projectheading = document.querySelector("#services h2");
-console.log(projectheading);
+const contactHeading = document.querySelector("#contact h2");
+console.log(contactHeading);
+
+
+const servicesHeading = document.querySelector("#services h2");
+console.log(servicesHeading);
+
+const projectHeading = document.querySelector("#projects h2");
+console.log(projectHeading);
+
+
 
 
 //Text Context
-
 heading.textContent = "My portfolio";
-contactheading.textContent = "Contact me";
-projectheading.textContent = "My services";
+contactHeading.textContent = "Let's Connect!";
+projectHeading.textContent = "My Projects";
 
 heading.style.color = "purple";
-contactheading.style.color = "blue";
+heading.style.backgroundColor = "yellow";
+contactHeading.style.color = "purple";
+projectHeading.style.color = "purple";
+servicesHeading.style.color = "purple";
+
+
