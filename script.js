@@ -45,4 +45,24 @@ contactHeading.style.color = "purple";
 projectHeading.style.color = "purple";
 servicesHeading.style.color = "purple";
 
+heading.addEventListener("click", function () {
+    heading.style.color = "red";
+});
+
+const toggleButton = document.querySelector('#switch');
+const body = document.querySelector('body');
+let isOff = false;
+
+toggleButton.addEventListener("click", function () {
+    isOff = !isOff;
+
+    if (isOff) {
+        body.style.backgroundColor = "black";
+    } else {
+        body.style.backgroundColor = "white";
+
+
+    }
+});
+
 
