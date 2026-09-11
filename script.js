@@ -1,49 +1,41 @@
-console.log("Jive Miguel Valencia Dequito BSIS 3A.");
-const Myname= "Ryomen Sukuna";
+console.log("Hello mundo")
+const Myname = "Diolito";
+console.log("name: " + Myname);
+let age = 20;
+let number = "09109436835";
+console.log("Age: " + age)
+console.log("Number: " + number);
 
-
-let age=1000;
-let number=9307134230;
-
-const address = "Shibuya";
-
-console.log("Name: " +Myname);
-console.log("age: " +age);
-console.log ("number: " + number);
-console.log("address: " + address)
-
+const address = "Brgy. San Isidro E.B. Magalona";
+console.log("Address: " + address);
 
 function greet(name) {
-    return `Good Morning, ${name}`;
+
+    return `good morning, ${name}`;
+
+
 }
+console.log(greet("rene"))
 
-let name="Jive Miguel";
-console.log (greet(name))
-
-
-
-
-
-
-
-function add(a, b) {
-    return a + b;
-    
+function mdas(a, b) {
+    let mul = a * b;
+    let div = a / b;
+    let sum = a + b;
+    let sub = a - b;
+    return (`values: ${a} and ${b}. \n product: ${mul}, \n qoutient: ${div}, \n sum: ${sum},\n difference: ${sub}`);
 }
+console.log(mdas(5, 3));
 
-function sub(a, b) {
-    return a - b;
-}
+const heading = document.querySelector("h1");
+console.log(heading);
 
-function mul(a, b) {
-    return a * b;
-}
+const contactheading = document.querySelector("#contanct h2");
+console.log(contactheading);
 
-function div(a, b) {
-    return a / b;
-}
+const projectheading = document.querySelector("#services h2");
+console.log(projectheading);
 
-console.log("Add: "+add(5, 3));
-console.log("sub: "+sub(5, 3));
-console.log("mul: "+(5, 3));
-console.log("div: "+div(5, 3));
+heading.textContent = "My portfolio";
+contactheading.textContent = "Let's get in touch";
+projectheading.textContent = "What I can do for you"; 
+
