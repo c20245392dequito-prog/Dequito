@@ -1,65 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
 
+    <title>My Portfolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <h1>Dequito, Jive Miguel V.</h1>
-<button id="switch">Switch</button>
+<body class="text-center">
 
+    <h1 class="text-3xl font-bold">
+        Dequito, Jive Miguel V.
+    </h1>
 
-    <header>
-        <nav>
-            <span>@sukuna</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact us</a></li>
+    <h1 class="text-red-500 text-3xl font-bold">
+        Hello world!
+    </h1>
+
+    <button
+        id="switch"
+        class="bg-black text-white px-6 py-3 border-0 rounded-xl hover:bg-red-500 hover:text-black transition duration-500">
+        Switch
+    </button>
+
+    <header class="mt-5">
+
+        <nav
+            class="flex justify-between items-center ml-[50px] mr-[50px] max-[600px]:flex-col max-[600px]:gap-[15px]">
+
+            <span class="text-xl font-bold max-[600px]:text-green-500">
+                @sukuna
+            </span>
+
+            <ul
+                class="flex gap-5 p-0 m-0 list-none max-[600px]:flex-col max-[600px]:text-center">
+
+                <li>
+                    <a
+                        href="#projects"
+                        class="transition duration-500 hover:text-red-500">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#services"
+                        class="transition duration-500 hover:text-red-500">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contact"
+                        class="transition duration-500 hover:text-red-500">
+                        Contact us
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <main>
-        <section id="projects">
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
+
+    <main
+        class="flex flex-wrap gap-[30px] p-[50px] m-[50px] max-[600px]:p-[15px] max-[600px]:m-[10px] max-[600px]:gap-5">
+
+        <!-- PROJECTS -->
+
+        <section
+            id="projects"
+            class="flex-1 min-w-[280px] border-2 border-black p-5 max-[600px]:flex-[1_1_100%] max-[600px]:min-w-full">
+
+            <h2
+                class="py-12 border border-black text-3xl max-[768px]:text-[48px] max-[768px]:text-blue-500">
+
+                My Projects
+
+            </h2>
+
+            <p>
+                Personal portfolio, payroll system, company website,
+                startup website, and compliance monitoring system.
             </p>
+
         </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
+
+        <!-- SERVICES -->
+
+        <section
+            id="services"
+            class="flex-1 min-w-[280px] border-2 border-black p-5 max-[600px]:flex-[1_1_100%] max-[600px]:min-w-full">
+
+            <h2
+                class="bg-orange-500 text-3xl max-[768px]:text-[48px] max-[768px]:text-blue-500">
+
+                My Services
+
+            </h2>
+
+            <p>
+                Website Creation, System Creation, AI Automation,
+                Database Management, Project Management, Systems Analyst
+            </p>
+
         </section>
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
+
+        <!-- CONTACT -->
+
+        <section
+            id="contact"
+            class="flex-1 min-w-[280px] border-2 border-black p-5 bg-green-600 text-white max-[600px]:flex-[1_1_100%] max-[600px]:min-w-full">
+
+            <h2 class="text-3xl max-[768px]:text-[48px] max-[768px]:text-blue-500">
+                Let's build together!
+            </h2>
+
+            <form
+                action="#"
+                class="flex flex-col gap-5">
+
                 <!-- Name -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="p-2 border border-black rounded text-black">
+
 
                 <!-- Email -->
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="p-2 border border-black rounded text-black">
+
 
                 <!-- Message -->
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    name="message"
+                    id="message"
+                    rows="5"
+                    required
+                    class="p-2 border border-black rounded text-black"></textarea>
+
 
                 <!-- Submit -->
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
 
+                <button
+                    type="submit"
+                    class="bg-black text-white px-6 py-3 border-0 rounded-xl hover:bg-red-500 hover:text-black transition duration-500">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
 
 </html>
